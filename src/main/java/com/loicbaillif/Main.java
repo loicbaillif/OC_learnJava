@@ -8,5 +8,7 @@ public class Main {
 
         Print.title("This is a title");
         System.out.println("test");
+
+        Print.title("Some other title printed");
     }
 }
