@@ -1,14 +1,12 @@
 package com.loicbaillif;
 
+import com.loicbaillif.ch1.Ch1;
 import com.loicbaillif.tools.Print;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Print.title("OpenClassrooms: Learn Java");
 
-        Print.title("This is a title");
-        System.out.println("test");
-
-        Print.title("Some other title printed");
+        Ch1.main();
     }
 }
