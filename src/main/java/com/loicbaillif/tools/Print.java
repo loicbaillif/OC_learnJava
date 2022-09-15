@@ -29,15 +29,9 @@ public class Print {
     }
 
     public static void title(String text, char filingChar) {
-        // Constants
-        final var TEXT_LEN = text.length();
-
-        // Variables
-        int prefixSize = calculatePrefixSize(TEXT_LEN);
-
-        // Displaying title
-
+        // ***** Displaying title
         System.out.println(); // starts with an empty line
+
         // First line: full of FILING_CHAR
         for (int i = 0; i < TITLE_WIDTH; i++) {
             System.out.print(filingChar);
@@ -67,6 +61,7 @@ public class Print {
         int prefixSize = calculatePrefixSize(textLen);
         int suffixSize = calculateSuffixSize(textLen, prefixSize);
 
+        System.out.println();
         for (int i = 0; i < prefixSize; i++) {
             System.out.print(filingChar);
         }
