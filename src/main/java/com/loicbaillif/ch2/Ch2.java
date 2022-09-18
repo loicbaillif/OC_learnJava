@@ -21,6 +21,10 @@ public class Ch2 {
         }
 
         System.out.println("***** Exercise on Arrays *****");
+        // Let's consider 30 seats on first row
+        String[] firstRow = new String[30];
+        firstRow[17] = "Terry Nator";
+
         
     }
 
