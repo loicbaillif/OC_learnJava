@@ -2,9 +2,12 @@ package com.loicbaillif.ch2;
 
 import com.loicbaillif.tools.Print;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Ch2 {
     public static void main() {
-        Print.subtitle("Ch2: Handle data stacks");
+        Print.subtitle("Ch2: Handle data stacks", '#', true);
 
         System.out.println("***** Arrays *****");
         int[] cupsOfCoffeePerWeekday; // From monday to sunday
@@ -28,6 +31,11 @@ public class Ch2 {
         System.out.println("\n***** Lists *****");
         System.out.println("2 advantages:\n\t- fixed size");
         System.out.println("\t- Only existing values can be modified");
+        List<Integer> booksPerLibrary = new ArrayList<Integer>();
+        booksPerLibrary.add(32123);
+        if (booksPerLibrary.add(13579)) {
+            System.out.println("Library corrected added to ArrayList");
+        }
     }
 
 }

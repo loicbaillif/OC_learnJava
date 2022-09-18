@@ -39,7 +39,7 @@ public class Print {
         System.out.println();
 
         // Second line: centered text, filled on left and right
-        subtitle(text, false);
+        subtitle(text, filingChar, false);
 
         // Third line: full of FILING_CHAR
         for (int i = 0; i < TITLE_WIDTH; i++) {
@@ -51,10 +51,13 @@ public class Print {
 
 
     public static void subtitle(String text) {
-        subtitle(text, true);
+        subtitle(text, FILING_CHAR, true);
     }
 
-    public static void subtitle(String text, Boolean subtitleOnly) {
+    public static void subtitle(
+            String text,
+            char filingChar,
+            Boolean subtitleOnly) {
         // Variables
         int textLen = text.length();
         int prefixSize = calculatePrefixSize(textLen);
