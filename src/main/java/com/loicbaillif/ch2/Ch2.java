@@ -25,7 +25,9 @@ public class Ch2 {
         String[] firstRow = new String[30];
         firstRow[17] = "Terry Nator";
 
-        
+        System.out.println("\n***** Lists *****");
+        System.out.println("2 advantages:\n\t- fixed size");
+        System.out.println("\t- Only existing values can be modified");
     }
 
 }
