@@ -39,7 +39,7 @@ public class Print {
         System.out.println();
 
         // Second line: centered text, filled on left and right
-        subtitle(text, filingChar);
+        subtitle(text, false);
 
         // Third line: full of FILING_CHAR
         for (int i = 0; i < TITLE_WIDTH; i++) {
@@ -51,17 +51,19 @@ public class Print {
 
 
     public static void subtitle(String text) {
-        // Use default FILING_CHAR
-        subtitle(text, FILING_CHAR);
+        subtitle(text, true);
     }
 
-    public static void subtitle(String text, char filingChar) {
+    public static void subtitle(String text, Boolean subtitleOnly) {
         // Variables
         int textLen = text.length();
         int prefixSize = calculatePrefixSize(textLen);
         int suffixSize = calculateSuffixSize(textLen, prefixSize);
 
-        System.out.println();
+        if (subtitleOnly) {
+            System.out.println();
+        }
+
         for (int i = 0; i < prefixSize; i++) {
             System.out.print(filingChar);
         }
