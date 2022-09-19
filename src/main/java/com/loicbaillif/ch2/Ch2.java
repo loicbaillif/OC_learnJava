@@ -49,6 +49,13 @@ public class Ch2 {
         for (int nbBooks: booksPerLibrary) {
             System.out.println("\t" + nbBooks);
         }
+        System.out.println("Finally, we delete first element.");
+        System.out.printf("Size before removal: %d%n", booksPerLibrary.size());
+        booksPerLibrary.remove(0);
+        System.out.printf("Size after removal: %d%n", booksPerLibrary.size());
+        for (int nbBooks: booksPerLibrary) {
+            System.out.println("\t" + nbBooks);
+        }
     }
 
 }
