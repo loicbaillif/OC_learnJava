@@ -66,7 +66,21 @@ public class Ch2 {
         System.out.println("Same basic actions as List:");
         System.out.println("\tadd()\n\tremove()\n\tsize()");
         System.out.println("Set is not ordered ==> set() does not exist");
-
+        townsInFrance.add("Carentan");
+        townsInFrance.add("Rocamadour");
+        townsInFrance.add("Nordheim");
+        townsInFrance.add("Cabourg");
+        System.out.printf("townsInFrance contains %d elements:%n",
+                townsInFrance.size());
+        for (String town: townsInFrance) {
+            System.out.printf("\t- %s%n", town);
+        }
+        townsInFrance.remove("Rocamadour");
+        System.out.printf("townsInFrance contains %d elements:%n",
+                townsInFrance.size());
+        for (String town: townsInFrance) {
+            System.out.printf("\t- %s%n", town);
+        }
     }
 
 }
