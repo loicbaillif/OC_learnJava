@@ -3,7 +3,9 @@ package com.loicbaillif.ch2;
 import com.loicbaillif.tools.Print;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Ch2 {
     public static void main() {
@@ -56,6 +58,15 @@ public class Ch2 {
         for (int nbBooks: booksPerLibrary) {
             System.out.println("\t" + nbBooks);
         }
+
+
+        System.out.println("\n***** Sets *****");
+        System.out.println("used for unordered items.");
+        Set<String> townsInFrance = new HashSet<String>();
+        System.out.println("Same basic actions as List:");
+        System.out.println("\tadd()\n\tremove()\n\tsize()");
+        System.out.println("Set is not ordered ==> set() does not exist");
+
     }
 
 }
