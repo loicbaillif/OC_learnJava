@@ -44,6 +44,11 @@ public class Ch2 {
         for (int nbBooks: booksPerLibrary) {
             System.out.println("\t" + nbBooks);
         }
+        System.out.println("We will now replace an element by another value");
+        booksPerLibrary.set(1, 32100);
+        for (int nbBooks: booksPerLibrary) {
+            System.out.println("\t" + nbBooks);
+        }
     }
 
 }
