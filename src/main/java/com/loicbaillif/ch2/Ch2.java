@@ -36,6 +36,14 @@ public class Ch2 {
         if (booksPerLibrary.add(13579)) {
             System.out.println("Library corrected added to ArrayList");
         }
+        for (int nbBooks: booksPerLibrary) {
+            System.out.println("\t" + nbBooks);
+        }
+        System.out.println("After adding new value at index 0:");
+        booksPerLibrary.add(0, 525);
+        for (int nbBooks: booksPerLibrary) {
+            System.out.println("\t" + nbBooks);
+        }
     }
 
 }
