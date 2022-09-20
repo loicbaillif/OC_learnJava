@@ -2,10 +2,7 @@ package com.loicbaillif.ch2;
 
 import com.loicbaillif.tools.Print;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class Ch2 {
     public static void main() {
@@ -81,6 +78,12 @@ public class Ch2 {
         for (String town: townsInFrance) {
             System.out.printf("\t- %s%n", town);
         }
+
+
+        System.out.println("\n***** Maps *****");
+        System.out.println("Association {key: value}");
+        System.out.println("Key is often a String");
+        Map<String, Integer> friendsBirthyear = new HashMap<String, Integer>();
     }
 
 }
