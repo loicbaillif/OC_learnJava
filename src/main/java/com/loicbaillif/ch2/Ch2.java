@@ -5,6 +5,9 @@ import com.loicbaillif.tools.Print;
 import java.util.*;
 
 public class Ch2 {
+    private final static String K_MARIE = "Marie";
+    private final static String K_MAYTE = "Mayte";
+
     public static void main() {
         Print.subtitle("Ch2: Handle data stacks", '#', true);
 
@@ -84,6 +87,26 @@ public class Ch2 {
         System.out.println("Association {key: value}");
         System.out.println("Key is often a String");
         Map<String, Integer> friendsBirthyear = new HashMap<String, Integer>();
+        friendsBirthyear.put("Sophie", 1986);
+        friendsBirthyear.put("Florian", 1982);
+        friendsBirthyear.put("Christophe", 1989);
+        System.out.println(friendsBirthyear.get("Sophie"));
+        friendsBirthyear.put("florian", 1999);
+        System.out.printf("Florian birth year: %d%n",
+                friendsBirthyear.get("Florian"));
+        System.out.printf("florian birth year: %d%n",
+                friendsBirthyear.get("florian"));
+        // Tip: use constants instead of direct String
+        // See private static final variables in Class
+        friendsBirthyear.put(K_MARIE, 1961);
+        friendsBirthyear.put(K_MAYTE, 1969);
+        System.out.printf("%s birth year: %d%n",
+                K_MARIE,
+                friendsBirthyear.get(K_MARIE));
+        System.out.printf("%s birth year: %d%n",
+                K_MAYTE,
+                friendsBirthyear.get(K_MAYTE));
+        // Developpez votre style
     }
 
 }
