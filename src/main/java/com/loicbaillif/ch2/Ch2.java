@@ -116,6 +116,11 @@ public class Ch2 {
         for (int i = 0; i < morningTasks.size(); i++) {
             System.out.println(morningTasks.get(i));
         }
+        System.out.println("To reassign a value: use put() on its key");
+        morningTasks.put(0, "Stop dreaming.");
+        for (int i = 0; i < morningTasks.size(); i++) {
+            System.out.printf("\tTask %d: %s%n", i, morningTasks.get(i));
+        }
     }
 
 }
