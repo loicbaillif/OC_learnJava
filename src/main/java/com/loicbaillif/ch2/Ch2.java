@@ -106,7 +106,16 @@ public class Ch2 {
         System.out.printf("%s birth year: %d%n",
                 K_MAYTE,
                 friendsBirthyear.get(K_MAYTE));
-        // Developpez votre style
+        // Key type can also be an Integer;
+        Map<Integer, String> morningTasks = new HashMap<Integer, String>();
+        morningTasks.put(0, "Open eyes.")
+        morningTasks.put(1, "Acknowledge the alarm");
+        morningTasks.put(2, "Prepare coffee");
+        morningTasks.put(3, "Have a shower");
+        morningTasks.put(4, "Get dressed");
+        for (int i = 0; i < morningTasks.size(); i++) {
+            System.out.println(morningTasks.get(i));
+        }
     }
 
 }
