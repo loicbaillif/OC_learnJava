@@ -113,14 +113,35 @@ public class Ch2 {
         morningTasks.put(2, "Prepare coffee");
         morningTasks.put(3, "Have a shower");
         morningTasks.put(4, "Get dressed");
-        for (int i = 0; i < morningTasks.size(); i++) {
-            System.out.println(morningTasks.get(i));
-        }
-        System.out.println("To reassign a value: use put() on its key");
-        morningTasks.put(0, "Stop dreaming.");
+        morningTasks.put(5, "Watch TV");
         for (int i = 0; i < morningTasks.size(); i++) {
             System.out.printf("\tTask %d: %s%n", i, morningTasks.get(i));
         }
+        System.out.println("To reassign a value: use put() on its key");
+        morningTasks.put(0, "Stop dreaming.");
+        morningTasks.remove(5);
+        for (int i = 0; i < morningTasks.size(); i++) {
+            System.out.printf("\tTask %d: %s%n", i, morningTasks.get(i));
+        }
+
+        System.out.println("\n***** Summary *****");
+        System.out.println("");
+        System.out.println(". Array: \n\t- Fixed size container");
+        System.out.println("\t- Elements have index starting from 0");
+        System.out.println("\n. Lists: \n\t- Similar to array");
+        System.out.println("\t- Elements can be added or deleted");
+        System.out.println("\n. Sets: \n\t- Elements are unordered.");
+        System.out.println("\t- They can be accessed via enumeration");
+        System.out.println("\n. Maps:");
+        System.out.println("\t- Elements are organized as key/value pair");
+        System.out.println("\t- Elements are accessible via their key");
+        System.out.println("\n. Most common actions:");
+        System.out.println("\t- get(): Access an element");
+        System.out.println("\t- put(): Add a new element");
+        System.out.println("\t- remove(): Remove an element");
+        System.out.println("\t- xxx: Modify an element (variable)");
+        System.out.println("\txxx.size() - Count elements");
+        System.out.println("\tfor loops - loop through elements");
     }
 
 }
