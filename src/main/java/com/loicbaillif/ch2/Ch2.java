@@ -108,7 +108,7 @@ public class Ch2 {
                 friendsBirthyear.get(K_MAYTE));
         // Key type can also be an Integer;
         Map<Integer, String> morningTasks = new HashMap<Integer, String>();
-        morningTasks.put(0, "Open eyes.")
+        morningTasks.put(0, "Open eyes.");
         morningTasks.put(1, "Acknowledge the alarm");
         morningTasks.put(2, "Prepare coffee");
         morningTasks.put(3, "Have a shower");
