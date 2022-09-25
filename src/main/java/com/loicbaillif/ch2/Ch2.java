@@ -9,9 +9,9 @@ public class Ch2 {
     private final static String K_MAYTE = "Mayte";
 
     public static void main() {
-        Print.subtitle("Ch2: Handle data stacks", '#', true);
+        Print.title("Ch2: Handle data stacks", '#');
 
-        System.out.println("***** Arrays *****");
+        Print.subtitle("Arrays");
         int[] cupsOfCoffeePerWeekday; // From monday to sunday
         cupsOfCoffeePerWeekday = new int[7];
         int[] daysPerMonth = new int[12];
@@ -25,12 +25,14 @@ public class Ch2 {
                     daysPerMonth[i]);
         }
 
-        System.out.println("***** Exercise on Arrays *****");
+        Print.subtitle("Exercise on Arrays");
         // Let's consider 30 seats on first row
         String[] firstRow = new String[30];
         firstRow[17] = "Terry Nator";
 
-        System.out.println("\n***** Lists *****");
+
+
+        Print.subtitle("Lists");
         System.out.println("2 advantages:\n\t- fixed size");
         System.out.println("\t- Only existing values can be modified");
         List<Integer> booksPerLibrary = new ArrayList<Integer>();
@@ -60,7 +62,7 @@ public class Ch2 {
         }
 
 
-        System.out.println("\n***** Sets *****");
+        Print.subtitle("Sets");
         System.out.println("used for unordered items.");
         Set<String> townsInFrance = new HashSet<String>();
         System.out.println("Same basic actions as List:");
@@ -83,7 +85,7 @@ public class Ch2 {
         }
 
 
-        System.out.println("\n***** Maps *****");
+        Print.subtitle("Maps");
         System.out.println("Association {key: value}");
         System.out.println("Key is often a String");
         Map<String, Integer> friendsBirthyear = new HashMap<String, Integer>();
@@ -124,8 +126,7 @@ public class Ch2 {
             System.out.printf("\tTask %d: %s%n", i, morningTasks.get(i));
         }
 
-        System.out.println("\n***** Summary *****");
-        System.out.println("");
+        Print.subtitle("Summary");
         System.out.println(". Array: \n\t- Fixed size container");
         System.out.println("\t- Elements have index starting from 0");
         System.out.println("\n. Lists: \n\t- Similar to array");
@@ -140,8 +141,10 @@ public class Ch2 {
         System.out.println("\t- put(): Add a new element");
         System.out.println("\t- remove(): Remove an element");
         System.out.println("\t- xxx: Modify an element (variable)");
-        System.out.println("\txxx.size() - Count elements");
-        System.out.println("\tfor loops - loop through elements");
+        System.out.println("\t- xxx.size(): Count elements");
+        System.out.println("\t- for loops: loop through elements");
+
+        Print.subtitle("End of chapter 2");
     }
 
 }
