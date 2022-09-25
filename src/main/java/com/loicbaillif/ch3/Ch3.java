@@ -21,12 +21,15 @@ public class Ch3 {
                     calculatePerimeter(rectangle[0], rectangle[1]));
         }
 
-        System.out.println("***** References types *****");
+        System.out.println("***** Reference types *****");
         Car car1 = new Car();
         Car car2 = car1;
-        System.out.printf("car1.colour = %s%n", car1.colour);
-        System.out.printf("car2.colour = %s%n", car2.colour);
-        
+        System.out.printf("\t- car1.colour = %s%n", car1.colour);
+        System.out.printf("\t- car2.colour = %s%n", car2.colour);
+        car1.colour = "green";
+        System.out.println("car1.colour = \"green\";");
+        System.out.printf("\t- car1.colour = %s%n", car1.colour);
+        System.out.printf("\t- car2.colour = %s%n", car2.colour);
 
 
         Print.subtitle("End of chapter 3");
