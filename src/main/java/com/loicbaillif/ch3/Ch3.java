@@ -21,7 +21,7 @@ public class Ch3 {
                     calculatePerimeter(rectangle[0], rectangle[1]));
         }
 
-        System.out.println("***** Reference types *****");
+        Print.subtitle("Reference types");
         Car car1 = new Car();
         Car car2 = car1;
         System.out.printf("\t- car1.colour = %s%n", car1.colour);
@@ -36,6 +36,15 @@ public class Ch3 {
         System.out.printf("\t- car2.colour = %s%n", car2.colour);
 
 
+        Print.subtitle("Summary");
+        System.out.println("Methods can have parameters and returned value");
+        System.out.println("Returned value is, in most cases, the result of " +
+                "function execution. It is returned to the mother block " +
+                "which called the function, and re-used from there.");
+        System.out.println("Parameters are inputs for a function, needed " +
+                "to determine its result.");
+        System.out.println("Parameters are variables defined by a name and " +
+                "a type. They are specified in the method declaration.");
 
         Print.subtitle("End of chapter 3");
     }
