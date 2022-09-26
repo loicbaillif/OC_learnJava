@@ -30,6 +30,11 @@ public class Ch3 {
         System.out.println("car1.colour = \"green\";");
         System.out.printf("\t- car1.colour = %s%n", car1.colour);
         System.out.printf("\t- car2.colour = %s%n", car2.colour);
+        car2.colour = "blue";
+        System.out.println("car2.colour = \"blue\";");
+        System.out.printf("\t- car1.colour = %s%n", car1.colour);
+        System.out.printf("\t- car2.colour = %s%n", car2.colour);
+
 
 
         Print.subtitle("End of chapter 3");
